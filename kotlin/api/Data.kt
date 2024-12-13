@@ -1,0 +1,23 @@
+package api
+
+data class Data(
+    val time: String,          // 관측 시간 (YYMMDDHHMI)
+    val location: String,      // 관측소 ID (STN)
+    val wd1: Int?,             // 센서1 풍향 (WD1)
+    val ws1: Float?,           // 센서1 풍속 (WS1)
+    val ws1Gst: Float?,        // 센서1 GUST 풍속 (WS1_GST)
+    val wd2: Int?,             // 센서2 풍향 (WD2)
+    val ws2: Float?,           // 센서2 풍속 (WS2)
+    val ws2Gst: Float?,        // 센서2 GUST 풍속 (WS2_GST)
+    val pa: Float?,            // 해면기압 (PA)
+    val hm: Float?,            // 상대습도 (HM)
+    val ta: Float?,            // 기온 (TA)
+    val tw: Float?,            // 해수면 온도 (TW)
+    val whMax: Float?,         // 최대파고 (WH_MAX)
+    val whSig: Float?,         // 유의파고 (WH_SIG)
+    val whAve: Float?,         // 평균파고 (WH_AVE)
+    val wp: Float?,            // 파주기 (WP)
+    val wo: Int?,              // 파향 (WO)
+    val aqc: String?,          // RQMOD QC 결과 (AQC)
+    val mqc: String?           // 수동 QC 결과 (MQC)
+)
